@@ -1,6 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/anhnguyen-gcp/dj-app:develop', '.']
+    args: ['build', '-t', 'gcr.io/anhnguyen-gcp/$REPO_NAME:$SHORT_SHA', '.']
 
 images:
-  - 'gcr.io/anhnguyen-gcp/dj-app:develop'
+  - 'gcr.io/anhnguyen-gcp/$REPO_NAME:$SHORT_SHA'
+  - 'gcr.io/anhnguyen-gcp/$REPO_NAME:newest'
