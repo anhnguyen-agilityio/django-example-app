@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>home page</title>
+    </head>
+    <body>
+        <h1>List Resumes</h1>
+        <ul>
+            {% for i in resumes %}
+                <li>
+                    <p>{{i.pk}}</p>
+                    <ul>
+                        <li>{{i.pdf}}</li>
+                        <li>{{i.photos}}</li>
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

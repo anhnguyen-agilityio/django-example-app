@@ -1,0 +1,17 @@
+# https://docs.djangoproject.com/en/2.2/
+Django==2.2.9
+
+
+# https://django-storages.readthedocs.io/en/latest/backends/gcloud.html
+django-storages[google]==1.9.1
+
+# Python WSGI HTTP Server for UNIX
+gunicorn==19.9.0
+
+
+# https://github.com/python-pillow/Pillow/tree/1cecf08d16509c20473766b4cdb7a65169844819
+Pillow==7.0.0
+
+
+# PostgreSQL adapter
+psycopg2==2.8.5

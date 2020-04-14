@@ -1,0 +1,6 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/anhnguyen-gcp/dj-app:develop', '.']
+
+images:
+  - 'gcr.io/anhnguyen-gcp/dj-app:develop'
